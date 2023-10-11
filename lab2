@@ -1,0 +1,34 @@
+1114 lab system
+
+- cat>input.txt
+Hello
+Hi
+how are you, I am fine
+thankS
+bye.^c
+
+-cat input.txt
+(change uppercase to lowercase using command in seedlabs documentiation)
+- tr [:upper] [:lower] <input.txt>clean_input.txt
+-cat clean_input.txt
+(displays lowercase output)
+ tr -cd ’[a-z][\n][:space:]’ < lowercase.txt > plaintext.txt
+ - cat>new.txt
+ h ell o
+ hey
+
+ hi
+ how
+ are  you??
+
+ //command to change leters:
+ tr ’aet’ ’XGE’ < in.txt > out.txt
+
+ tr 'h' 't' <new.txt>cipher.txt
+
+ //check frequency
+ - grep -o h cipher.txt
+ grep -o h cipher.txt | uniq -ic
+
+
+
